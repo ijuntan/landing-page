@@ -17,7 +17,7 @@ body {
     color: var(--main)
 }
 
-header, footer, .about, .flex, .quote {
+header, footer, .about, .flex, .quote, .cta {
     display: flex;
     align-items: center;
 }
@@ -159,10 +159,14 @@ footer {
     color: var(--dark)
 }
 
-.quote {
+.quote, .cta {
     justify-content: center;
-    background-color: #fed7aa;
     padding: 80px 12px;
+}
+
+.quote {
+    padding: 80px 12px;
+    background-color: #fed7aa;
 }
 
 .quote div {
@@ -182,4 +186,34 @@ footer {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
+}
+
+.cta div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #d97706;
+    border-radius: 5px;
+    padding: 48px 156px;
+    gap: 64px;
+}
+
+.cta div div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--light);
+    gap: 0;
+    padding: 0;
+    p { padding: 0; margin: 0 }
+}
+
+.cta div div .title {
+    font-size: 28px;
+}
+
+.cta div div .subtitle{
+    font-size: 20px;
+    color: var(--secondary)
 }
