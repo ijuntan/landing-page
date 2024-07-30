@@ -1,0 +1,1 @@
+# Template for a basic commercial website
